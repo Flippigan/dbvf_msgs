@@ -8,3 +8,4 @@ float64 vx
 float64 vy
 float64 vz
 float64 heading
+float64 range_alt    # Rangefinder AGL altitude (meters), -1.0 if no valid reading
