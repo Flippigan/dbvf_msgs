@@ -13,6 +13,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/SetMode.srv"
   "srv/ArmMotors.srv"
   "srv/SendGuidedPosition.srv"
+  "srv/SendGuidedVelocity.srv"
   "srv/StartPrecisionLanding.srv"
   DEPENDENCIES std_msgs geometry_msgs
 )
