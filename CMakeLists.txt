@@ -19,6 +19,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ResumeMission.srv"
   "srv/AbortMission.srv"
   "srv/DoSetServo.srv"
+  "srv/Takeoff.srv"
   DEPENDENCIES std_msgs geometry_msgs
 )
 
