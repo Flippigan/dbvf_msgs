@@ -54,14 +54,33 @@ float64 heading        # Degrees
 ### SendGuidedPosition.srv
 `float64 lat, float64 lon, float64 alt` --- `bool success, string message`
 
+### SendGuidedVelocity.srv
+`float64 vx, float64 vy, float64 vz` --- `bool success, string message`
+
 ### StartPrecisionLanding.srv
 `float64 target_lat, float64 target_lon` --- `bool success, string message`
+
+### StartMission.srv
+`string config_path` --- `bool success, string message`
+
+### ResumeMission.srv
+(empty request) --- `bool success, string message`
+
+### AbortMission.srv
+`string reason` --- `bool success, string message`
+
+### DoSetServo.srv
+`int32 servo_number, int32 pwm` --- `bool success, string message`
+
+### Takeoff.srv
+`float64 altitude` --- `bool success, string message`
 
 ## Usage
 
 ```python
 from dbvf_msgs.msg import LandingTargetPose, TagStatus, VehicleState
 from dbvf_msgs.srv import SetMode, ArmMotors, SendGuidedPosition, StartPrecisionLanding
+from dbvf_msgs.srv import StartMission, ResumeMission, AbortMission, DoSetServo, Takeoff
 ```
 
 ## Build
