@@ -58,7 +58,7 @@ float64 heading        # Degrees
 `float64 vx, float64 vy, float64 vz` --- `bool success, string message`
 
 ### StartPrecisionLanding.srv
-`float64 target_lat, float64 target_lon` --- `bool success, string message`
+`float64 target_lat, float64 target_lon, float64 offset_forward (0.0), float64 offset_right (0.0)` --- `bool success, string message`
 
 ### StartMission.srv
 `string config_path` --- `bool success, string message`

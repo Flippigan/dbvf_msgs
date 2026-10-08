@@ -1,6 +1,10 @@
 float64 vx
 float64 vy
 float64 vz
+float64 yaw        # Desired heading (radians), used when use_yaw=true
+float64 yaw_rate   # Desired yaw rate (rad/s), used when use_yaw_rate=true
+bool use_yaw       # false = ignore yaw field (default, backward compatible)
+bool use_yaw_rate  # false = ignore yaw_rate field (default, backward compatible)
 ---
 bool success
 string message
